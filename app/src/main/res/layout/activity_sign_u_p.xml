@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUP"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/skyBlue"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/usernameR"
+                android:hint="Username/Email"
+                android:fontFamily="sans-serif"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/black"
+                android:paddingBottom="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passR"
+                android:hint="Set Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black"
+                android:paddingBottom="15dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passRC"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black"
+                android:paddingBottom="15dp"
+                />
+
+            <Button
+                android:background="@drawable/oval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUp"
+                android:text="SignUp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:paddingHorizontal="55dp"
+                android:layout_marginTop="25dp"
+
+
+                />
+            <Button
+                android:background="@color/skyBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginback"
+                android:text="Already have an account? \n Login"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:paddingHorizontal="55dp"
+                android:layout_marginTop="25dp"
+
+
+                />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressR"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
